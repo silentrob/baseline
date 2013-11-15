@@ -20,7 +20,7 @@ html(lang="en")
       .container
         if current.path[0] === "index"
           .articles
-            for post, slug in public.blog.data
+            for post, slug in public.blog._data
               article
                 a(href="/blog/#{ slug }")
                   h1= post.title
